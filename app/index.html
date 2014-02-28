@@ -1,17 +1,23 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="curriculumApp">
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
+
+<h1>This is my page!</h1>
   <ul class="menu">
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
   </ul>
 
-  <div ng-view></div>
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
 
   <div>Angular seed app: v<span app-version></span></div>
 
@@ -25,5 +31,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+  <script src="lib/jquery/jquery-1.10.2.js"></script>
 </body>
 </html>
